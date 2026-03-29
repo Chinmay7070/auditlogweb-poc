@@ -4,6 +4,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="auditlogweb-2026-01" author="chinmay">
+        <createTable tableName="auditlog_read_event">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="user_id" type="int"/>
+            <column name="entity_type" type="varchar(255)"/>
+            <column name="entity_id" type="varchar(255)"/>
+            <column name="method_name" type="varchar(255)"/>
+            <column name="accessed_on" type="datetime"/>
+        </createTable>
+    </changeSet>
  
 
 </databaseChangeLog>
