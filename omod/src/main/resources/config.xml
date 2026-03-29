@@ -32,7 +32,10 @@
 			<description>Allows viewing audit logs in the system</description>
 		</privilege>
 	</privileges>
-
+    <privilege>
+        <name>View Read Audit Logs</name>
+        <description>Allows viewing read access audit logs</description>
+    </privilege>
 	<messages>
 		<lang>en</lang>
 		<file>messages.properties</file>
