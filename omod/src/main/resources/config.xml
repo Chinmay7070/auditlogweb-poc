@@ -36,6 +36,10 @@
         <name>View Read Audit Logs</name>
         <description>Allows viewing read access audit logs</description>
     </privilege>
+    <privilege>
+        <name>View Clinical Audit Logs</name>
+        <description>Allows viewing clinical workflow audit logs</description>
+    </privilege>
 	<messages>
 		<lang>en</lang>
 		<file>messages.properties</file>
